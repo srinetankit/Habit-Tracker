@@ -49,10 +49,7 @@ app.use(session({
         maxAge: (1000 * 50 * 100)
     },
     store: MongoStore.create({
-        // mongoUrl: 'mongodb+srv://habitdata:habit0033@cluster0.gdcw1lg.mongodb.net/',
-        mongoUrl: 'mongodb+srv://csv:n1bb5sZdHvvafrbG@cluster0.gdcw1lg.mongodb.net/?retryWrites=true&w=majority',
-
- 
+        mongoUrl: 'mongodb+srv://habitdata:habit0033@cluster0.gdcw1lg.mongodb.net/',
         autoRemove: 'disabled'
     }),
     // Move the callback outside the store configuration object
