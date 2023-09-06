@@ -1,0 +1,147 @@
+/* Reset some default styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.background {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+}
+
+.background .shape {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shape:first-child {
+  background: linear-gradient(#1845ad, #23a2f6);
+  left: -80px;
+  top: -80px;
+}
+
+.shape:last-child {
+  background: linear-gradient(to right, #ff512f, #f09819);
+  right: -90px;
+  bottom: -80px;
+}
+
+
+#flash-msg {
+  top: 80px;
+  right: 20px;
+  width: 300px;
+  z-index: 1000;
+  padding: 10px;
+  border-radius: 10px;
+  position: fixed;
+  background-color:yellow;
+  color: black;
+  padding: 10px 20px;
+  display: none; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;
+}
+form {
+  height: 500px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+form h3 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form h5 {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+input {
+  height: 40px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #23a2f6;
+}
+
+::placeholder {
+  color: #aaa;
+}
+
+input[type=submit] {
+  margin: 20px auto;
+  display: block;
+  width: 100%;
+  background-color: #23a2f6;
+  color: #fff;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+  background-color: #1845ad;
+}
+
+#signuplink {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#s-up-link {
+  font-size: 18px;
+  font-style: italic;
+  color: #555;
+  font-weight: 600;
+}
