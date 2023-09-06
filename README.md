@@ -1,6 +1,6 @@
 # Habit-Tracker
 
-###Hosted Link- " will add soon "
+###Hosted Link- "https://habit-app-qcri.onrender.com"
 
  ##DESCRIPTION - 
  A habit tracker project is a web application that enables users to sign in and sign out. This intuitive platform empowers users to seamlessly perform CRUD operations—Create, Read, Update, Delete—on their daily habits. This includes functionalities like effortlessly adding new habits, swiftly accessing and reviewing their current habits, smoothly modifying or editing habits, and conveniently deleting habits they no longer wish to track.

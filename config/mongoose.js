@@ -1,12 +1,12 @@
-const mongoose= require('mongoose');
-mongoose.connect('mongodb+srv://habitdata:habit0033@cluster0.gdcw1lg.mongodb.net/');
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://habit:7HaOn91B9mVKvQOQ@cluster1.7trg1lt.mongodb.net/?retryWrites=true&w=majority');
 
-const db=mongoose.connection;
+const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, "Error Connection to MongoDB"));
 
-db.once('open', function(){
+db.once('open', function () {
     console.log('Conected to Database:: MongoDB');
 })
 
-module.exports=db;
+module.exports = db;
